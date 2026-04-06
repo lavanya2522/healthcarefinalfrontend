@@ -2,6 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { Home, Search, Clock, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
+import logo from "../asset/image/logo.webp"
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
   const { user, logout } = useAuth();
@@ -25,7 +26,8 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl gradient-primary">
-              <span className="text-lg font-bold text-primary-foreground">H</span>
+              {/* <span className="text-lg font-bold text-primary-foreground">H</span> */}
+              <img src={logo} alt="logo" className="h-full w-full object-contain" />
             </div>
             <span className="font-display text-lg font-bold text-foreground">HealthPredict</span>
           </div>

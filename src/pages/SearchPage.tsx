@@ -212,7 +212,7 @@ const SearchPage = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
-              <button
+              {/* <button
                 onClick={toggleVoiceRecording}
                 className={`absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1.5 transition-colors ${
                   isRecording ? "bg-destructive text-destructive-foreground animate-pulse" : "text-muted-foreground hover:text-primary hover:bg-secondary"
@@ -220,7 +220,7 @@ const SearchPage = () => {
                 title={isRecording ? "Stop recording" : "Record voice (Tamil)"}
               >
                 {isRecording ? <MicOff className="h-4 w-4" /> : <Mic className="h-4 w-4" />}
-              </button>
+              </button> */}
             </div>
 
             {filtered.length > 0 && (
